@@ -1,0 +1,31 @@
+{
+  "metadata": {
+    "title": "Kina Works",
+    "description": "A Kina's Website"
+  },
+  "plugins": {
+    "metalsmith-env": {},
+    "metalsmith-metallic": true,
+    "metalsmith-assets": {
+      "source": "./assets",
+      "destination": "./assets"
+    },
+    "crafterkina-update": {
+      "path": "app/mod",
+      "repos": ["SurviveInSociety"],
+      "user": "CrafterKina"
+    },
+    "metalsmith-in-place": {
+      "engine": "handlebars",
+      "partials": "layouts/partials"
+    },
+    "metalsmith-markdown": {},
+    "metalsmith-rootpath":{},
+    "metalsmith-layouts": {
+      "engine": "handlebars",
+      "partials": "layouts/partials",
+      "rename":true
+    },
+    "metalsmith-html-minifier": "*.html"
+  }
+}

@@ -1,0 +1,7 @@
+---
+layout: status.html
+stat: 
+  code: 408
+  mes: Request Timeout
+  sub: タイムアウト！
+---

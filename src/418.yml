@@ -1,0 +1,7 @@
+---
+layout: status.html
+stat: 
+  code: 418
+  mes: I'm a teapot
+  sub: でも、Javaならあるいは……?
+---

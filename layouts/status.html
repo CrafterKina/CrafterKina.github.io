@@ -1,0 +1,20 @@
+{{> head}}
+<body>
+    {{> header}}
+    <p style="position:fixed;font-size:128px;transform:rotate(45deg);-moz-transform:rotate(45deg);-webkit-transform:rotate(45deg);bottom:0;right:0;left:0;margin:auto;color:#aaaaaa;z-index:-1;min-width:800px;">*おおっと*</p>
+    <section>
+        <span class="row text-center">
+            <h1>{{stat.code}}<br>{{stat.mes}}</h1><br>
+            <h2>{{stat.sub}}</h2><br>
+        </span>
+        <span class="row text-center" style="font-size:64px;">
+    	    <p>
+                <a class="text-center" href="./" onclick="window.history.back(-1);return false"><span class="glyphicon glyphicon-backward" aria-hidden="true"></span></a>&nbsp;
+        <a class="text-center" href="./"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>&nbsp;
+        <a class="text-center" href="418.html"><span class="glyphicon glyphicon-forward" aria-hidden="true"></span></a>
+        </p>
+        </span>
+    </section>
+    {{> footer}}
+</body>
+{{> foot}}

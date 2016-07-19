@@ -1,0 +1,7 @@
+---
+layout: status.html
+stat: 
+  code: 403
+  mes: Forbidden
+  sub: だめったらだめ
+---
