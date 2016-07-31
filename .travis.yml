@@ -17,6 +17,7 @@ env:
 script:
   - node_modules/.bin/metalsmith
 after_success:
+  - mkdir build
   - cd build
   - git init
   - git remote add origin https://github.com/CrafterKina/CrafterKina.github.io.git
