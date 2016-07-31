@@ -15,7 +15,7 @@ env:
   - GIT_AUTHOR_EMAIL=CrafterKina@users.noreply.github.com
   -  secure: "ngGWfvR/SmaJynfH+0H1NVClnUZ2Jl0C8QHf3rfFcTd+ZfsJKebXSYX4MqisS5tkOvTp/0upsbUVb85tgGalIrf3HUM35+zXh/6BMGdVTnk4O6wqfNm1vpA7wQJ1GuolsiuxbNvFbHPd+Uh7MVtg+kNkaPPWFzmUOabCQ01KAeR4xmBRDwYUdUS9ocCsPkkq8LhG9zLLUSMWvPRL9Vj95nFcxQ9HUEIk2u0yI5FpsN+doFfO1AzU+rof0CugJanGU0AjyOHNvA0Wl8OTU8Xd9IFvjEm75H6gGbadMyeKvcpxcts2x/hDFmUVBC4+teytQegOPKHBhydo3UE9wpIWEiltMiZp7vNVrQFuoSKD1uXpMdlUWY2OJLdB2124uSUqsYyExvXy217dVtBX6smsv+L+IDv3QitNCEckUcPEVy68PESwLo0RCbDQ8O6XQOIS74xqMFfYKeYn0xQF30pQZb3iXyl4gmybYAfFe1g/eNi7GoYtRAkel47CgJszhBs0hN2logUvGKSpvmZhUht0K0Rt4dj1zBhar8dcQJgpHdl9VIkV7cSpnuJLtQcvpGFfBzea+v26kD/l2O2L0sf6l5JdiMyVO3R9E+iafZOpZi1YACZJpRPSx4DR7yGkSe2L4dNciQe8OzcnzlzS6vgL8Pf+um04rRbRqlBU8u5z8Wg="
 script:
-  - build
+  - node_modules/.bin/metalsmith
 after_success:
   - cd build
   - git init
