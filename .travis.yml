@@ -24,4 +24,4 @@ after_success:
   - git marge origin/master
   - git add -A
   - git commit -m "[Travis CI] $TRAVIS_COMMIT"
-  - '[ "$TRAVIS_PULL_REQUEST" == "false" ] && git push -q -f "https://${GH_TOKEN}@github.com/CrafterKina/CrafterKina.github.io.git" master:gh-pages > /dev/null 2>&1'
+  - '[ "$TRAVIS_PULL_REQUEST" == "false" ] && git push -q -f "https://${GH_TOKEN}@github.com/CrafterKina/CrafterKina.github.io.git" > /dev/null 2>&1'
