@@ -24,7 +24,6 @@ after_success:
   - git checkout -b stash
   - git add -A
   - git commit -m "[Travis CI] $TRAVIS_COMMIT"
-  - git fetch origin
-  - git merge origin/master
+  - git pull origin:master
   - git rebase master
   - '[ "$TRAVIS_PULL_REQUEST" == "false" ] && git push -q -f "https://${GH_TOKEN}@github.com/CrafterKina/CrafterKina.github.io.git" master > /dev/null 2>&1'
