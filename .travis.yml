@@ -20,9 +20,11 @@ after_success:
   - mkdir build
   - cd build
   - git init
-  - git add -A
   - git remote add origin https://github.com/CrafterKina/CrafterKina.github.io.git
+  - git checkout -b stash
+  - git add -A
+  - git commit -m "[Travis CI] $TRAVIS_COMMIT"
   - git fetch origin
   - git merge origin/master
-  - git commit -m "[Travis CI] $TRAVIS_COMMIT"
+  - git rebase master
   - '[ "$TRAVIS_PULL_REQUEST" == "false" ] && git push -q -f "https://${GH_TOKEN}@github.com/CrafterKina/CrafterKina.github.io.git" master > /dev/null 2>&1'
