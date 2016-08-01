@@ -21,9 +21,11 @@ after_success:
   - cd build
   - git init
   - git add -A
-  - git stash
+  - git checkout -b stash
+  - git commit -m "[Travis CI] $TRAVIS_COMMIT"
   - git remote add origin https://github.com/CrafterKina/CrafterKina.github.io.git
   - git pull origin master
-  - git stash pop stash@{0}
-  - git commit -m "[Travis CI] $TRAVIS_COMMIT"
+  - git merge master
+  - git checkout master
+  - git merge stash
   - '[ "$TRAVIS_PULL_REQUEST" == "false" ] && git push -q -f "https://${GH_TOKEN}@github.com/CrafterKina/CrafterKina.github.io.git" master > /dev/null 2>&1'
