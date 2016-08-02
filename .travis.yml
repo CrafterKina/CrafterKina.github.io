@@ -19,6 +19,7 @@ before_script:
 script:
   - node_modules/.bin/metalsmith
 after_success:
+  - cd build
   - git add -A
   - git commit -m "[Travis CI] $TRAVIS_COMMIT"
   - '[ "$TRAVIS_PULL_REQUEST" == "false" ] && git push -q -f "https://${GH_TOKEN}@github.com/CrafterKina/CrafterKina.github.io.git" master > /dev/null 2>&1'
