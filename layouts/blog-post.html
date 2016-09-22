@@ -1,0 +1,37 @@
+{{> head}}
+
+<body style="min-height:100%">
+    {{> header}}
+    <article>
+        <header id="info-bar">
+            <div class="container">
+                <h1>{{title}}</h1>
+                <p>{{description}}</p>
+                {{#each tags}}<a href="log/tags/{{this}}.html" class="btn btn-default btn-xs" role="button"><i class="fa fa-tag fa-lg" aria-hidden="true"></i> {{this}}</a>{{/each}}<br>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-related="CrafterKina" data-dnt="true">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </div>
+        </header>
+        <div class="container">
+            <div class="row">
+                <section class="col-xs-9 contents">
+                    {{{contents}}}
+                </section>
+                <section class="col-xs-3">
+                </section>
+            </div>
+            <span class="text-center">
+                <div class="row">{{#each tags}}<a href="log/tags/{{this}}.html" class="btn btn-default btn-xs" role="button"><i class="fa fa-tag fa-lg" aria-hidden="true"></i> {{this}}</a>{{/each}}</div>
+                <div class="row"><a href="https://twitter.com/share" class="twitter-share-button" data-related="CrafterKina" data-dnt="true">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+                <hr>
+                <div class="row"><div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">{{#if previous}}<div class="thumbnail"><p>{{previous.title}}</p><a href="{{previous.path.dir}}/{{previous.path.name}}.html" class="btn btn-primary btn-sm" role="button">前の記事</a></div>{{/if}}</div><div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"><a href="log/">一覧に戻る</a></div><div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">{{#if next}}<div class="thumbnail"><p>{{next.title}}</p><a href="{{next.path.dir}}/{{next.path.name}}.html" class="btn btn-primary btn-sm" role="button">次の記事</a></div>{{/if}}</div></div>
+            </span>
+        </div>
+        <hr>
+        <footer>
+            <p><time data-time="{{moment created ''}}">{{moment created 'YYYY/MM/DD HH:mm:ss.SSSZ'}}</time>に最初の版が公開されました。</p>
+            <p><time data-time="{{moment updated ''}}">{{moment updated 'YYYY/MM/DD HH:mm:ss.SSSZ'}}</time>が最後の更新です。</p>
+        </footer>
+    </article>
+    {{> footer}}
+    {{> foot}}
+</body>

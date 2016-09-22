@@ -1,0 +1,9 @@
+{
+  "name": "crafterkina-addmeta",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "js-yaml": "^3.2.7",
+    "minimatch": "^3.0.3"
+  }
+}
