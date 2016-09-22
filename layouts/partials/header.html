@@ -1,3 +1,12 @@
-<header>
-
+<header class="navbar navbar-default navbar-static-top">
+  <div class="navbar-header">
+    <a href="./" class="navbar-brand">Kina's Toolbox</a>
+  </div>
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      {{#each navs}}
+      <li><a href="{{ref}}">{{title}}</a></li>
+      {{/each}}
+    </ul>
+  </div>
 </header>

@@ -1,42 +1,15 @@
 ---
 layout: page.html
+header: true
 css:
   - assets/css/main.css
-buttons:
-  - ref: app/
-    icon: <span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
-    title: App
-  - ref: app/web/
-    icon: <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
-    title: WEBApp
-  - ref: music/
-    icon: <span class="glyphicon glyphicon-music" aria-hidden="true"></span>
-    title: Music
-  - ref: image/
-    icon: <span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span>
-    title: Image
-  - ref: log/
-    icon: <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
-    title: Log
-  - ref: other/
-    icon: <span class="glyphicon glyphicon-flash" aria-hidden="true"></span>
-    title: Misc
-  - ref: me.html
-    icon: <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-    title: Me
-  - ref: donate.html
-    icon: <span class="glyphicon glyphicon-gift" aria-hidden="true"></span>
-    title: Donate
-  - ref: link.html
-    icon: <span class="glyphicon glyphicon-link" aria-hidden="true"></span>
-    title: Link
 ---
 
-    <h1 class="row text-center">Welcome to Kina's Product Page</h1>
+    <header class="row text-center page-header">Welcome to Kina's Product Page</header>
     <div class="row">
     <div class="container">
     <div class="row col-xs-6 col-xs-offset-3">
-        {{#each buttons}}
+        {{#each navs}}
         <a href="{{this.ref}}" class="col-md-4 thumbnail tile-button text-center">{{{this.icon}}}<br><span class="name">{{this.title}}</span></a>
         {{/each}}
     </div>
