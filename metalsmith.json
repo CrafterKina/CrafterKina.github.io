@@ -48,7 +48,7 @@
     "metalsmith-register-helpers": {
       "directory": "./helpers"
     },
-    "./local_plugins/crafterkina-addmeta": {
+    "local_plugins/crafterkina-addmeta/index.js": {
       "log/post/**": "log/post/metadata.json"
     },
     "metalsmith-paths": {
@@ -87,6 +87,6 @@
       "rename": true
     },
     "metalsmith-html-minifier": "*.html",
-    "./local_plugins/crafterkina-showmeta": {}
+    "local_plugins/crafterkina-showmeta/index.js": {}
   }
 }
