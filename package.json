@@ -2,6 +2,9 @@
   "name": "crafterkina-website",
   "version": "0.1.0",
   "private": true,
+  "script": {
+    "start": "env NODE_PATH=. node app.js"
+  },
   "dependencies": {
     "handlebars": "^4.0.5",
     "metalsmith": "^2.2.0",
