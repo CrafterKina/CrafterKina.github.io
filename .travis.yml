@@ -18,10 +18,8 @@ script:
   - node index.js
 after_success:
   - cd build
-  - git add .
-  - git stash
   - git clone -b master https://github.com/CrafterKina/CrafterKina.github.io.git build
   - git checkout -b master
-  - git stash apply stash@{0}
+  - git add .
   - git commit -m "[Travis CI] $TRAVIS_COMMIT"
   - '[ "$TRAVIS_PULL_REQUEST" == "false" ] && git push -q -f "https://${GH_TOKEN}@github.com/CrafterKina/CrafterKina.github.io.git" master > /dev/null 2>&1'
