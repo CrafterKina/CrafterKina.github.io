@@ -18,6 +18,8 @@ before_script:
 script:
   - node index.js
 after_success:
+  - cd build
+  - git init
   - git checkout --orphan master
   - git add .
   - git commit -m "[Travis CI] $TRAVIS_COMMIT"
