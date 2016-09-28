@@ -1,6 +1,6 @@
 var Metalsmith = require('metalsmith');
 var del = require('del');
-del(['build/**','!build/.git']);
+del.sync(['build/**','!build/.git']);
 Metalsmith(process.cwd())
     .clean(false)
     .metadata({
