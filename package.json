@@ -26,6 +26,7 @@
     "metalsmith-register-helpers":"^0.2.0",
     "diy-handlebars-helpers":"^1.0.10",
     "moment":"^2.15.0",
-    "metalsmith-drafts":"^0.0.1"
+    "metalsmith-drafts":"^0.0.1",
+    "del":"^2.2.2"
   }
 }
