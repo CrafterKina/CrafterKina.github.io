@@ -1,0 +1,20 @@
+.tile-button{
+    position:relative;
+    font-size:128px;
+    margin:0px;
+    color:#222222;
+}
+
+.tile-button .name{
+    font-size:27px;
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 0;
+}
+
+header{
+    font-size: 50px;
+}
