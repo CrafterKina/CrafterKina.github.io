@@ -18,6 +18,7 @@ before_script:
 script:
   - node index.js
 after_success:
+  - git checkout --orphan master
   - git add .
   - git commit -m "[Travis CI] $TRAVIS_COMMIT"
   - '[ "$TRAVIS_PULL_REQUEST" == "false" ] && git push -q -f "https://${GH_TOKEN}@github.com/CrafterKina/CrafterKina.github.io.git" master > /dev/null 2>&1'
