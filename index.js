@@ -77,6 +77,13 @@ Metalsmith(process.cwd())
             reverse: false
         }
     }))
+    .use((require('metalsmith-rss'))({
+        feedOptions:{
+            site_url:"https://crafterkina.github.io"
+        },
+        collection: "blog-posts",
+        destination: "log/rss.xml"
+    }))
     .use((require('metalsmith-rootpath'))())
     .use((require('metalsmith-in-place'))({
         engine: "handlebars",
