@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Untitled RSS Feed]]></title>
+        <description><![CDATA[Untitled RSS Feed]]></description>
+        <link>https://crafterkina.github.io</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Mon, 03 Oct 2016 21:36:00 GMT</lastBuildDate>
+        <atom:link href="https://crafterkina.github.io/log/rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[静的サイトでブログ試行]]></title>
+            <description><![CDATA[どうせブログなんか続かないので、既存サービス使うのをやめた話。]]></description>
+            <guid isPermaLink="false">静的サイトでブログ試行</guid>
+        </item>
+        <item>
+            <title><![CDATA[主観的日々録 Day1]]></title>
+            <description><![CDATA[要するに、長文になったTwitter。]]></description>
+            <guid isPermaLink="false">主観的日々録 Day1</guid>
+        </item>
+        <item>
+            <title><![CDATA[主観的日々録 Day2]]></title>
+            <description><![CDATA[主観ましましなので、鵜呑みにする前にGoogle検索を。]]></description>
+            <guid isPermaLink="false">主観的日々録 Day2</guid>
+        </item>
+        <item>
+            <title><![CDATA[(不)特定多数による著作物の著作権は誰に属するのか]]></title>
+            <description><![CDATA[弁護士に相談すればわかると思う。]]></description>
+            <guid isPermaLink="false">(不)特定多数による著作物の著作権は誰に属するのか</guid>
+        </item>
+    </channel>
+</rss>
