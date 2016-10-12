@@ -4,7 +4,7 @@
         <description><![CDATA[Untitled RSS Feed]]></description>
         <link>https://crafterkina.github.io</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 03 Oct 2016 21:36:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 12 Oct 2016 07:29:09 GMT</lastBuildDate>
         <atom:link href="https://crafterkina.github.io/log/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[静的サイトでブログ試行]]></title>
@@ -25,6 +25,11 @@
             <title><![CDATA[(不)特定多数による著作物の著作権は誰に属するのか]]></title>
             <description><![CDATA[弁護士に相談すればわかると思う。]]></description>
             <guid isPermaLink="false">(不)特定多数による著作物の著作権は誰に属するのか</guid>
+        </item>
+        <item>
+            <title><![CDATA[主観的日々録 Day3]]></title>
+            <description><![CDATA[正直言ってこのシリーズいらないし、ブログ名に格上げするか。]]></description>
+            <guid isPermaLink="false">主観的日々録 Day3</guid>
         </item>
     </channel>
 </rss>
