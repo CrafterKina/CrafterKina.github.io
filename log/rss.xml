@@ -4,7 +4,7 @@
         <description><![CDATA[Untitled RSS Feed]]></description>
         <link>https://crafterkina.github.io</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 12 Oct 2016 07:29:09 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 14 Oct 2016 12:44:44 GMT</lastBuildDate>
         <atom:link href="https://crafterkina.github.io/log/rss.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[静的サイトでブログ試行]]></title>
@@ -30,6 +30,11 @@
             <title><![CDATA[主観的日々録 Day3]]></title>
             <description><![CDATA[正直言ってこのシリーズいらないし、ブログ名に格上げするか。]]></description>
             <guid isPermaLink="false">主観的日々録 Day3</guid>
+        </item>
+        <item>
+            <title><![CDATA[Google Photosに翻弄された話]]></title>
+            <description><![CDATA[もうグッチャグチャ]]></description>
+            <guid isPermaLink="false">Google Photosに翻弄された話</guid>
         </item>
     </channel>
 </rss>
